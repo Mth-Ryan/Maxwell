@@ -1,4 +1,4 @@
-namespace Syntax;
+namespace Maxwell.Syntax;
 
 public enum TokenKind
 {
@@ -20,10 +20,10 @@ public enum TokenKind
     LeftBrack,   // [
     RightBrack,  // ]
     Quote,       // '
+    Dot,         // .
 
     Comment,    // ;; Comment
     Indent,
-    EndOfLine,
     Invalid,
     EndOfFile
 }

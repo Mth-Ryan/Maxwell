@@ -1,4 +1,4 @@
-namespace Syntax;
+namespace Maxwell.Syntax;
 
 public struct TokenPosition
 {
