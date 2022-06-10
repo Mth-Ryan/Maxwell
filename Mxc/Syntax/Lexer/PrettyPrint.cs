@@ -1,4 +1,4 @@
-namespace Maxwell.Syntax;
+namespace Maxwell.Mxc.Syntax;
 
 public static class LexerPrettyPrint
 {

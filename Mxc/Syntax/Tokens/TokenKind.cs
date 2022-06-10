@@ -1,4 +1,4 @@
-namespace Maxwell.Syntax;
+namespace Maxwell.Mxc.Syntax;
 
 public enum TokenKind
 {

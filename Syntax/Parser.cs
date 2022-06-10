@@ -1,1 +1,0 @@
-namespace Maxwell.Syntax;

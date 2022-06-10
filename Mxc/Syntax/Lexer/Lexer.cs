@@ -2,7 +2,7 @@ using System.Collections;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Maxwell.Syntax;
+namespace Maxwell.Mxc.Syntax;
 
 public class Lexer : IEnumerable<Token>
 {
