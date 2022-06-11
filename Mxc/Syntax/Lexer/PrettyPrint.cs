@@ -1,9 +1,12 @@
+using System.Text;
+
 namespace Maxwell.Mxc.Syntax;
 
 public static class LexerPrettyPrint
 {
-    public static void Print(Lexer lex, bool filterIndent = true)
+    public static String GetString(Lexer lex, bool filterIndent = true)
     {
+        var builder = new StringBuilder("");
         IEnumerable<Token> tokens = lex;
         if (filterIndent)
             tokens = lex.Where(x => x.Kind != TokenKind.Indent);
@@ -14,10 +17,16 @@ public static class LexerPrettyPrint
             if (token.IsClosePair())
                 indent = indent > 1 ? indent - 1 : indent;
 
-            Console.WriteLine(new String(' ', 2 * indent) + token.ToString());
+            builder.Append(new String(' ', 2 * indent) + token.ToString() + "\n");
 
             if (token.IsOpenPair())
                 indent++;
         }
+        return builder.ToString();
+    }
+    public static void Print(Lexer lex, bool filterIndent = true)
+    {
+        var content = GetString(lex, filterIndent);
+        Console.WriteLine(content);
     }
 }
