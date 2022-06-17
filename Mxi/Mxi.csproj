@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Mxc\Mxc.csproj" />
+    <ProjectReference Include="..\MxcLib\MxcLib.fsproj" />
   </ItemGroup>
 
   <PropertyGroup>
