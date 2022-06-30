@@ -1,7 +1,7 @@
-namespace Maxwell.MxcLib.Syntax.Parser
+namespace Maxwell.LibMxc.Syntax.Parser
 
-open Maxwell.MxcLib.Syntax.Rules.SyntaxPatterns
-open Maxwell.MxcLib.Syntax.Ast
+open Maxwell.LibMxc.Syntax.Rules.SyntaxPatterns
+open Maxwell.LibMxc.Syntax.Ast
 open ParserUtils
 open Combinators
 open GenericParsers

@@ -1,4 +1,4 @@
-namespace Maxwell.MxcLib.Syntax
+namespace Maxwell.LibMxc.Syntax
 
 module Ast =
     type MaxLiteral =

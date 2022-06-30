@@ -1,4 +1,4 @@
-namespace Maxwell.MxcLib.Syntax.Parser
+namespace Maxwell.LibMxc.Syntax.Parser
 
 open Combinators
 

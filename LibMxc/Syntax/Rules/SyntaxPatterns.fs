@@ -1,4 +1,4 @@
-namespace Maxwell.MxcLib.Syntax.Rules
+namespace Maxwell.LibMxc.Syntax.Rules
 
 module SyntaxPatterns =
     let newlinePattern = "\r\n|\r|\n"

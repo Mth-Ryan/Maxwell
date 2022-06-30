@@ -1,8 +1,8 @@
-namespace Maxwell.MxcLib.Syntax.Parser
+namespace Maxwell.LibMxc.Syntax.Parser
 
 open System.Text.RegularExpressions
 
-open Maxwell.MxcLib.Syntax.Rules.SyntaxPatterns
+open Maxwell.LibMxc.Syntax.Rules.SyntaxPatterns
 open Combinators
 
 module GenericParsers =
