@@ -5,7 +5,7 @@ open Combinators
 open GenericParsers
 open MaxwellParser
 
-module ReplParser =
+module public ReplParser =
     type ReplToken =
         | Literal    = 0
         | Keyword    = 1

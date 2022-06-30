@@ -6,7 +6,7 @@ class Program
 {
     static void Main(String[] args)
     {
-        var repl = new RawRepl();
+        var repl = new EditorRepl();
         repl.EventLoop();
     }
 }
