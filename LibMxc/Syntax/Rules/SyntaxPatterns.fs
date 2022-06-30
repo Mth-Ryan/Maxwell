@@ -1,9 +1,11 @@
 namespace Maxwell.LibMxc.Syntax.Rules
 
 module SyntaxPatterns =
-    let newlinePattern = "\r\n|\r|\n"
+    let newlinePattern = "\r|\n"
     
-    let whitespacePattern = "(\r\n|\r|\n| |\t)+"
+    let newlineWindowsPattern = "\r\n"
+    
+    let whitespacePattern = " |\t"
 
     let integerPattern = @"[+-]?\d+"
 
@@ -15,10 +17,10 @@ module SyntaxPatterns =
 
     let definePattern = @"def"
 
-    let lambdaPattern = @"lambda|λ"
+    let lambdaPattern = @"lambda"
+
+    let lambdaShortPattern = @"λ"
 
     let ifPattern = @"if"
     
     let doPattern = @"do"
-
-    let keywordPattern = @"def|lambda|λ|if|do"

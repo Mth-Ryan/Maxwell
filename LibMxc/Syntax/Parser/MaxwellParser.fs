@@ -16,7 +16,8 @@ module MaxwellParser =
 
     let defineP = (regexP definePattern) <<. indentP
 
-    let lambdaP = (regexP lambdaPattern) <<. indentP
+    let lambdaP = ((regexP lambdaPattern) <|> (regexP lambdaShortPattern))
+                  <<. indentP
 
     let ifP = (regexP ifPattern) <<. indentP
 

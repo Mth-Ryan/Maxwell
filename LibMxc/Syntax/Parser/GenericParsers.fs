@@ -49,7 +49,12 @@ module GenericParsers =
 
     let boolStringP = regexP booleanPattern
 
-    let indentP = regexP whitespacePattern
+    let newlineP =
+        (regexP newlineWindowsPattern) <|> (regexP newlinePattern)
+
+    let whitespaceP = regexP whitespacePattern
+
+    let indentP = many (whitespaceP <|> newlineP)
 
     let optIndentP = optionalP indentP
 
