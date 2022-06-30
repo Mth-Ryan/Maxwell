@@ -11,6 +11,5 @@
     <Compile Include="Syntax/Parser/GenericParsers.fs" />
     <Compile Include="Syntax/Parser/ParserErrors.fs" />
     <Compile Include="Syntax/Parser/MaxwellParser.fs" />
-    <Compile Include="Library.fs" />
   </ItemGroup>
 </Project>
