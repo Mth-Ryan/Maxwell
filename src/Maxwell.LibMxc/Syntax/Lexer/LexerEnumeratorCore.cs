@@ -32,7 +32,7 @@ public partial class LexerEnumerator
         var value = "";
         while (cond(_ch))
         {
-            value.Append(_ch);
+            value += _ch;
             Next();
         }
         return value;
@@ -56,13 +56,13 @@ public partial class LexerEnumerator
     {
         var pos = _pos;
         var lhs = AdvanceWhile(TokenRules.IsNumberChar);
-        if (_ch == ',')
+        if (_ch == '.')
         {
             Next();
             var rhs = AdvanceWhile(TokenRules.IsNumberChar);
-            return new Token($"{lhs},{rhs}", TokenKind.Float, _pos);
+            return new Token($"{lhs}.{rhs}", TokenKind.Float, pos);
         }
-        return new Token(lhs, TokenKind.Int, _pos);
+        return new Token(lhs, TokenKind.Int, pos);
     }
 
     private Token TokenizeString()
@@ -84,15 +84,15 @@ public partial class LexerEnumerator
         Next();
         switch (ch)
         {
-            case '(': return new Token(TokenKind.LeftParen, _pos);
-            case ')': return new Token(TokenKind.RightParen, _pos);
-            case '[': return new Token(TokenKind.LeftBrack, _pos);
-            case ']': return new Token(TokenKind.RightBrack, _pos);
-            case '{': return new Token(TokenKind.LeftBrace, _pos);
-            case '}': return new Token(TokenKind.RightBrace, _pos);
-            case '\'': return new Token(TokenKind.Quote, _pos);
-            case '\u0000': return new Token(TokenKind.EOF, _pos);
-            default: return new Token(ch.ToString(), TokenKind.Invalid, _pos);
+            case '(': return new Token(TokenKind.LeftParen, pos);
+            case ')': return new Token(TokenKind.RightParen, pos);
+            case '[': return new Token(TokenKind.LeftBrack, pos);
+            case ']': return new Token(TokenKind.RightBrack, pos);
+            case '{': return new Token(TokenKind.LeftBrace, pos);
+            case '}': return new Token(TokenKind.RightBrace, pos);
+            case '\'': return new Token(TokenKind.Quote, pos);
+            case '\u0000': return new Token(TokenKind.EOF, pos);
+            default: return new Token(ch.ToString(), TokenKind.Invalid, pos);
         }
     }
 
