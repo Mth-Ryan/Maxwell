@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F2FD6CA8-3C5A-43A2-ACA8-AA3C97A49B73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxwell.LibMxc", "src\Maxwell.LibMxc\Maxwell.LibMxc.csproj", "{28095422-E5A4-4948-A14B-13B16E9C9CD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxwell.Mxc", "src\Maxwell.Mxc\Maxwell.Mxc.csproj", "{3B8DB12C-8E73-4344-8598-95B75D5A899C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxwell.Mxi", "src\Maxwell.Mxi\Maxwell.Mxi.csproj", "{B30CFE4E-ADAC-4017-BD28-61798820F25C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D971A135-9070-4796-A4E0-32CAB60A83CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxwell.LibMxc.Tests", "tests\Maxwell.LibMxc.Tests\Maxwell.LibMxc.Tests.csproj", "{75700270-8DF3-4F63-BFE8-2804A405E21B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxwell.Mxc.Tests", "tests\Maxwell.Mxc.Tests\Maxwell.Mxc.Tests.csproj", "{EB7DDE75-9662-47C6-8CE1-F16A9E49FF7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maxwell.Mxi.Tests", "tests\Maxwell.Mxi.Tests\Maxwell.Mxi.Tests.csproj", "{4514CF84-83B9-4DAE-91AA-F48A365CBF4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28095422-E5A4-4948-A14B-13B16E9C9CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28095422-E5A4-4948-A14B-13B16E9C9CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28095422-E5A4-4948-A14B-13B16E9C9CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28095422-E5A4-4948-A14B-13B16E9C9CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B8DB12C-8E73-4344-8598-95B75D5A899C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B8DB12C-8E73-4344-8598-95B75D5A899C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B8DB12C-8E73-4344-8598-95B75D5A899C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B8DB12C-8E73-4344-8598-95B75D5A899C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30CFE4E-ADAC-4017-BD28-61798820F25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30CFE4E-ADAC-4017-BD28-61798820F25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30CFE4E-ADAC-4017-BD28-61798820F25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30CFE4E-ADAC-4017-BD28-61798820F25C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75700270-8DF3-4F63-BFE8-2804A405E21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75700270-8DF3-4F63-BFE8-2804A405E21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75700270-8DF3-4F63-BFE8-2804A405E21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75700270-8DF3-4F63-BFE8-2804A405E21B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7DDE75-9662-47C6-8CE1-F16A9E49FF7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7DDE75-9662-47C6-8CE1-F16A9E49FF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7DDE75-9662-47C6-8CE1-F16A9E49FF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7DDE75-9662-47C6-8CE1-F16A9E49FF7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4514CF84-83B9-4DAE-91AA-F48A365CBF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4514CF84-83B9-4DAE-91AA-F48A365CBF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4514CF84-83B9-4DAE-91AA-F48A365CBF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4514CF84-83B9-4DAE-91AA-F48A365CBF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28095422-E5A4-4948-A14B-13B16E9C9CD3} = {F2FD6CA8-3C5A-43A2-ACA8-AA3C97A49B73}
+		{3B8DB12C-8E73-4344-8598-95B75D5A899C} = {F2FD6CA8-3C5A-43A2-ACA8-AA3C97A49B73}
+		{B30CFE4E-ADAC-4017-BD28-61798820F25C} = {F2FD6CA8-3C5A-43A2-ACA8-AA3C97A49B73}
+		{75700270-8DF3-4F63-BFE8-2804A405E21B} = {D971A135-9070-4796-A4E0-32CAB60A83CD}
+		{EB7DDE75-9662-47C6-8CE1-F16A9E49FF7C} = {D971A135-9070-4796-A4E0-32CAB60A83CD}
+		{4514CF84-83B9-4DAE-91AA-F48A365CBF4E} = {D971A135-9070-4796-A4E0-32CAB60A83CD}
+	EndGlobalSection
+EndGlobal
